@@ -56,11 +56,11 @@ public class RESTClient {
     }
 
     public String getAllAircraftForPassenger(int passengerId) {
-        return sendGetRequest("passenger/" + passengerId + "/aircraft");
+        return sendGetRequest("passenger/id/" + passengerId + "/aircraft");
     }
 
     public String getAllAirportsForPassenger(int passengerId) {
-        return sendGetRequest("passenger/" + passengerId + "/airports");
+        return sendGetRequest("passenger/id/" + passengerId + "/airports");
     }
 
     public String getAllAirportsInCity(String cityName) {
